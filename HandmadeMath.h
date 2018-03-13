@@ -682,7 +682,7 @@ HMM_INLINE hmm_vec4 HMM_Vec4v(hmm_vec3 Vector, float W)
  * Binary vector operations
  */
 
-HMM_INLINE hmm_vec2 HMM_AddVec2(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_AddVec2(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result;
 
@@ -692,7 +692,7 @@ HMM_INLINE hmm_vec2 HMM_AddVec2(hmm_vec2 Left, hmm_vec2 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_AddVec3(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_AddVec3(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result;
 
@@ -703,7 +703,7 @@ HMM_INLINE hmm_vec3 HMM_AddVec3(hmm_vec3 Left, hmm_vec3 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_AddVec4(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_AddVec4(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result;
 
@@ -719,7 +719,7 @@ HMM_INLINE hmm_vec4 HMM_AddVec4(hmm_vec4 Left, hmm_vec4 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_SubtractVec2(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_SubtractVec2(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result;
 
@@ -729,7 +729,7 @@ HMM_INLINE hmm_vec2 HMM_SubtractVec2(hmm_vec2 Left, hmm_vec2 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_SubtractVec3(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_SubtractVec3(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result;
 
@@ -740,7 +740,7 @@ HMM_INLINE hmm_vec3 HMM_SubtractVec3(hmm_vec3 Left, hmm_vec3 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_SubtractVec4(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_SubtractVec4(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result;
     
@@ -756,7 +756,7 @@ HMM_INLINE hmm_vec4 HMM_SubtractVec4(hmm_vec4 Left, hmm_vec4 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_MultiplyVec2(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_MultiplyVec2(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result;
 
@@ -766,7 +766,7 @@ HMM_INLINE hmm_vec2 HMM_MultiplyVec2(hmm_vec2 Left, hmm_vec2 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_MultiplyVec2f(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 HMM_MultiplyVec2f(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result;
 
@@ -776,7 +776,7 @@ HMM_INLINE hmm_vec2 HMM_MultiplyVec2f(hmm_vec2 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_MultiplyVec3(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_MultiplyVec3(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result;
 
@@ -787,7 +787,7 @@ HMM_INLINE hmm_vec3 HMM_MultiplyVec3(hmm_vec3 Left, hmm_vec3 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_MultiplyVec3f(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 HMM_MultiplyVec3f(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result;
 
@@ -798,7 +798,7 @@ HMM_INLINE hmm_vec3 HMM_MultiplyVec3f(hmm_vec3 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_MultiplyVec4(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_MultiplyVec4(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result;
 
@@ -814,7 +814,7 @@ HMM_INLINE hmm_vec4 HMM_MultiplyVec4(hmm_vec4 Left, hmm_vec4 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_MultiplyVec4f(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 HMM_MultiplyVec4f(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result;
 
@@ -831,7 +831,7 @@ HMM_INLINE hmm_vec4 HMM_MultiplyVec4f(hmm_vec4 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_DivideVec2(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_DivideVec2(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result;
 
@@ -841,7 +841,7 @@ HMM_INLINE hmm_vec2 HMM_DivideVec2(hmm_vec2 Left, hmm_vec2 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_DivideVec2f(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 HMM_DivideVec2f(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result;
 
@@ -851,7 +851,7 @@ HMM_INLINE hmm_vec2 HMM_DivideVec2f(hmm_vec2 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_DivideVec3(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_DivideVec3(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result;
 
@@ -862,7 +862,7 @@ HMM_INLINE hmm_vec3 HMM_DivideVec3(hmm_vec3 Left, hmm_vec3 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_DivideVec3f(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 HMM_DivideVec3f(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result;
 
@@ -873,7 +873,7 @@ HMM_INLINE hmm_vec3 HMM_DivideVec3f(hmm_vec3 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_DivideVec4(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_DivideVec4(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result;
     
@@ -889,7 +889,7 @@ HMM_INLINE hmm_vec4 HMM_DivideVec4(hmm_vec4 Left, hmm_vec4 Right)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_DivideVec4f(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 HMM_DivideVec4f(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result;
 
@@ -906,42 +906,42 @@ HMM_INLINE hmm_vec4 HMM_DivideVec4f(hmm_vec4 Left, float Right)
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_EqualsVec2(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_bool HMM_EqualsVec2(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_bool Result = (Left.X == Right.X && Left.Y == Right.Y);
 
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_EqualsVec3(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_bool HMM_EqualsVec3(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_bool Result = (Left.X == Right.X && Left.Y == Right.Y && Left.Z == Right.Z);
 
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_EqualsVec4(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_bool HMM_EqualsVec4(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_bool Result = (Left.X == Right.X && Left.Y == Right.Y && Left.Z == Right.Z && Left.W == Right.W);
 
     return (Result);
 }
 
-HMM_INLINE float HMM_DotVec2(hmm_vec2 VecOne, hmm_vec2 VecTwo)
+HMM_INLINE float HMM_DotVec2(const hmm_vec2& VecOne, const hmm_vec2 &VecTwo)
 {
     float Result = (VecOne.X * VecTwo.X) + (VecOne.Y * VecTwo.Y);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_DotVec3(hmm_vec3 VecOne, hmm_vec3 VecTwo)
+HMM_INLINE float HMM_DotVec3(const hmm_vec3& VecOne, const hmm_vec3& VecTwo)
 {
     float Result = (VecOne.X * VecTwo.X) + (VecOne.Y * VecTwo.Y) + (VecOne.Z * VecTwo.Z);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_DotVec4(hmm_vec4 VecOne, hmm_vec4 VecTwo)
+HMM_INLINE float HMM_DotVec4(const hmm_vec4& VecOne, const hmm_vec4& VecTwo)
 {
     float Result;
 
@@ -962,7 +962,7 @@ HMM_INLINE float HMM_DotVec4(hmm_vec4 VecOne, hmm_vec4 VecTwo)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Cross(hmm_vec3 VecOne, hmm_vec3 VecTwo)
+HMM_INLINE hmm_vec3 HMM_Cross(const hmm_vec3& VecOne, const hmm_vec3& VecTwo)
 {
     hmm_vec3 Result;
 
@@ -978,49 +978,49 @@ HMM_INLINE hmm_vec3 HMM_Cross(hmm_vec3 VecOne, hmm_vec3 VecTwo)
  * Unary vector operations
  */
 
-HMM_INLINE float HMM_LengthSquaredVec2(hmm_vec2 A)
+HMM_INLINE float HMM_LengthSquaredVec2(const hmm_vec2& A)
 {
     float Result = HMM_DotVec2(A, A);
     
     return(Result);
 }
 
-HMM_INLINE float HMM_LengthSquaredVec3(hmm_vec3 A)
+HMM_INLINE float HMM_LengthSquaredVec3(const hmm_vec3& A)
 {
     float Result = HMM_DotVec3(A, A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthSquaredVec4(hmm_vec4 A)
+HMM_INLINE float HMM_LengthSquaredVec4(const hmm_vec4& A)
 {
     float Result = HMM_DotVec4(A, A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthVec2(hmm_vec2 A)
+HMM_INLINE float HMM_LengthVec2(const hmm_vec2& A)
 {
     float Result = HMM_SquareRootF(HMM_LengthSquaredVec2(A));
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthVec3(hmm_vec3 A)
+HMM_INLINE float HMM_LengthVec3(const hmm_vec3& A)
 {
     float Result = HMM_SquareRootF(HMM_LengthSquaredVec3(A));
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthVec4(hmm_vec4 A)
+HMM_INLINE float HMM_LengthVec4(const hmm_vec4& A)
 {
     float Result = HMM_SquareRootF(HMM_LengthSquaredVec4(A));
     
     return(Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_NormalizeVec2(hmm_vec2 A)
+HMM_INLINE hmm_vec2 HMM_NormalizeVec2(const hmm_vec2& A)
 {
     hmm_vec2 Result = {0};
 
@@ -1036,7 +1036,7 @@ HMM_INLINE hmm_vec2 HMM_NormalizeVec2(hmm_vec2 A)
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_NormalizeVec3(hmm_vec3 A)
+HMM_INLINE hmm_vec3 HMM_NormalizeVec3(const hmm_vec3& A)
 {
     hmm_vec3 Result = {0};
 
@@ -1053,7 +1053,7 @@ HMM_INLINE hmm_vec3 HMM_NormalizeVec3(hmm_vec3 A)
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_NormalizeVec4(hmm_vec4 A)
+HMM_INLINE hmm_vec4 HMM_NormalizeVec4(const hmm_vec4& A)
 {
     hmm_vec4 Result = {0};
 
@@ -1084,7 +1084,7 @@ HMM_INLINE hmm_vec4 HMM_NormalizeVec4(hmm_vec4 A)
  */
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE __m128 HMM_LinearCombineSSE(__m128 Left, hmm_mat4 Right)
+HMM_INLINE __m128 HMM_LinearCombineSSE(const __m128& Left, const hmm_mat4& Right)
 {
     __m128 Result;
     Result = _mm_mul_ps(_mm_shuffle_ps(Left, Left, 0x00), Right.Rows[0]);
@@ -1121,7 +1121,7 @@ HMM_INLINE hmm_mat4 HMM_Mat4d(float Diagonal)
 }
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE hmm_mat4 HMM_Transpose(hmm_mat4 Matrix)
+HMM_INLINE hmm_mat4 HMM_Transpose(const hmm_mat4& Matrix)
 {
     hmm_mat4 Result = Matrix;
     
@@ -1130,11 +1130,11 @@ HMM_INLINE hmm_mat4 HMM_Transpose(hmm_mat4 Matrix)
     return (Result);
 }
 #else
-HMM_EXTERN hmm_mat4 HMM_Transpose(hmm_mat4 Matrix);
+HMM_EXTERN hmm_mat4 HMM_Transpose(const hmm_mat4& Matrix);
 #endif
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE hmm_mat4 HMM_AddMat4(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 HMM_AddMat4(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result;
 
@@ -1146,11 +1146,11 @@ HMM_INLINE hmm_mat4 HMM_AddMat4(hmm_mat4 Left, hmm_mat4 Right)
     return (Result);
 }
 #else
-HMM_EXTERN hmm_mat4 HMM_AddMat4(hmm_mat4 Left, hmm_mat4 Right);
+HMM_EXTERN hmm_mat4 HMM_AddMat4(const hmm_mat4& Left, const hmm_mat4& Right);
 #endif
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE hmm_mat4 HMM_SubtractMat4(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 HMM_SubtractMat4(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result;
 
@@ -1162,13 +1162,13 @@ HMM_INLINE hmm_mat4 HMM_SubtractMat4(hmm_mat4 Left, hmm_mat4 Right)
     return (Result);
 }
 #else
-HMM_EXTERN hmm_mat4 HMM_SubtractMat4(hmm_mat4 Left, hmm_mat4 Right);
+HMM_EXTERN hmm_mat4 HMM_SubtractMat4(const hmm_mat4& Left, const hmm_mat4& Right);
 #endif
 
-HMM_EXTERN hmm_mat4 HMM_MultiplyMat4(hmm_mat4 Left, hmm_mat4 Right);
+HMM_EXTERN hmm_mat4 HMM_MultiplyMat4(const hmm_mat4& Left, const hmm_mat4& Right);
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE hmm_mat4 HMM_MultiplyMat4f(hmm_mat4 Matrix, float Scalar)
+HMM_INLINE hmm_mat4 HMM_MultiplyMat4f(const hmm_mat4& Matrix, float Scalar)
 {
     hmm_mat4 Result;
 
@@ -1181,13 +1181,13 @@ HMM_INLINE hmm_mat4 HMM_MultiplyMat4f(hmm_mat4 Matrix, float Scalar)
     return (Result);
 }
 #else
-HMM_EXTERN hmm_mat4 HMM_MultiplyMat4f(hmm_mat4 Matrix, float Scalar);
+HMM_EXTERN hmm_mat4 HMM_MultiplyMat4f(const hmm_mat4& Matrix, float Scalar);
 #endif
 
-HMM_EXTERN hmm_vec4 HMM_MultiplyMat4ByVec4(hmm_mat4 Matrix, hmm_vec4 Vector);
+HMM_EXTERN hmm_vec4 HMM_MultiplyMat4ByVec4(const hmm_mat4& Matrix, const hmm_vec4& Vector);
 
 #ifdef HANDMADE_MATH__USE_SSE
-HMM_INLINE hmm_mat4 HMM_DivideMat4f(hmm_mat4 Matrix, float Scalar)
+HMM_INLINE hmm_mat4 HMM_DivideMat4f(const hmm_mat4& Matrix, float Scalar)
 {
     hmm_mat4 Result;
     
@@ -1200,7 +1200,7 @@ HMM_INLINE hmm_mat4 HMM_DivideMat4f(hmm_mat4 Matrix, float Scalar)
     return (Result);
 }
 #else
-HMM_EXTERN hmm_mat4 HMM_DivideMat4f(hmm_mat4 Matrix, float Scalar);
+HMM_EXTERN hmm_mat4 HMM_DivideMat4f(const hmm_mat4& Matrix, float Scalar);
 #endif
 
 
@@ -1240,7 +1240,7 @@ HMM_INLINE hmm_mat4 HMM_Perspective(float FOV, float AspectRatio, float Near, fl
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Translate(hmm_vec3 Translation)
+HMM_INLINE hmm_mat4 HMM_Translate(const hmm_vec3& Translation)
 {
     hmm_mat4 Result = HMM_Mat4d(1.0f);
 
@@ -1253,7 +1253,7 @@ HMM_INLINE hmm_mat4 HMM_Translate(hmm_vec3 Translation)
 
 HMM_EXTERN hmm_mat4 HMM_Rotate(float Angle, hmm_vec3 Axis);
 
-HMM_INLINE hmm_mat4 HMM_Scale(hmm_vec3 Scale)
+HMM_INLINE hmm_mat4 HMM_Scale(const hmm_vec3& Scale)
 {
     hmm_mat4 Result = HMM_Mat4d(1.0f);
 
@@ -1283,7 +1283,7 @@ HMM_INLINE hmm_quaternion HMM_Quaternion(float X, float Y, float Z, float W)
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_QuaternionV4(hmm_vec4 Vector)
+HMM_INLINE hmm_quaternion HMM_QuaternionV4(const hmm_vec4& Vector)
 {
     hmm_quaternion Result;
 
@@ -1295,7 +1295,7 @@ HMM_INLINE hmm_quaternion HMM_QuaternionV4(hmm_vec4 Vector)
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_AddQuaternion(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_AddQuaternion(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result;
 
@@ -1307,7 +1307,7 @@ HMM_INLINE hmm_quaternion HMM_AddQuaternion(hmm_quaternion Left, hmm_quaternion 
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_SubtractQuaternion(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_SubtractQuaternion(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result;
 
@@ -1319,7 +1319,7 @@ HMM_INLINE hmm_quaternion HMM_SubtractQuaternion(hmm_quaternion Left, hmm_quater
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_MultiplyQuaternion(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_MultiplyQuaternion(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result;
 
@@ -1331,7 +1331,7 @@ HMM_INLINE hmm_quaternion HMM_MultiplyQuaternion(hmm_quaternion Left, hmm_quater
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_MultiplyQuaternionF(hmm_quaternion Left, float Multiplicative)
+HMM_INLINE hmm_quaternion HMM_MultiplyQuaternionF(const hmm_quaternion& Left, float Multiplicative)
 {
     hmm_quaternion Result;
 
@@ -1343,7 +1343,7 @@ HMM_INLINE hmm_quaternion HMM_MultiplyQuaternionF(hmm_quaternion Left, float Mul
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_DivideQuaternionF(hmm_quaternion Left, float Dividend)
+HMM_INLINE hmm_quaternion HMM_DivideQuaternionF(const hmm_quaternion& Left, float Dividend)
 {
     hmm_quaternion Result;
 
@@ -1355,16 +1355,16 @@ HMM_INLINE hmm_quaternion HMM_DivideQuaternionF(hmm_quaternion Left, float Divid
     return (Result);
 }
 
-HMM_EXTERN hmm_quaternion HMM_InverseQuaternion(hmm_quaternion Left);
+HMM_EXTERN hmm_quaternion HMM_InverseQuaternion(const hmm_quaternion& Left);
 
-HMM_INLINE float HMM_DotQuaternion(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE float HMM_DotQuaternion(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     float Result = (Left.X * Right.X) + (Left.Y * Right.Y) + (Left.Z * Right.Z) + (Left.W * Right.W);
 
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_NormalizeQuaternion(hmm_quaternion Left)
+HMM_INLINE hmm_quaternion HMM_NormalizeQuaternion(const hmm_quaternion& Left)
 {
     hmm_quaternion Result;
 
@@ -1374,7 +1374,7 @@ HMM_INLINE hmm_quaternion HMM_NormalizeQuaternion(hmm_quaternion Left)
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_NLerp(hmm_quaternion Left, float Time, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_NLerp(const hmm_quaternion& Left, float Time, const hmm_quaternion& Right)
 {
     hmm_quaternion Result;
 
@@ -1388,9 +1388,9 @@ HMM_INLINE hmm_quaternion HMM_NLerp(hmm_quaternion Left, float Time, hmm_quatern
     return (Result);
 }
 
-HMM_EXTERN hmm_quaternion HMM_Slerp(hmm_quaternion Left, float Time, hmm_quaternion Right);
-HMM_EXTERN hmm_mat4 HMM_QuaternionToMat4(hmm_quaternion Left);
-HMM_EXTERN hmm_quaternion HMM_QuaternionFromAxisAngle(hmm_vec3 Axis, float AngleOfRotation);
+HMM_EXTERN hmm_quaternion HMM_Slerp(const hmm_quaternion& Left, float Time, const hmm_quaternion& Right);
+HMM_EXTERN hmm_mat4 HMM_QuaternionToMat4(const hmm_quaternion& Left);
+HMM_EXTERN hmm_quaternion HMM_QuaternionFromAxisAngle(const hmm_vec3& Axis, float AngleOfRotation);
 
 #ifdef __cplusplus
 }
@@ -1398,627 +1398,627 @@ HMM_EXTERN hmm_quaternion HMM_QuaternionFromAxisAngle(hmm_vec3 Axis, float Angle
 
 #ifdef __cplusplus
 
-HMM_INLINE float HMM_Length(hmm_vec2 A)
+HMM_INLINE float HMM_Length(const hmm_vec2& A)
 {
     float Result = HMM_LengthVec2(A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_Length(hmm_vec3 A)
+HMM_INLINE float HMM_Length(const hmm_vec3& A)
 {
     float Result = HMM_LengthVec3(A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_Length(hmm_vec4 A)
+HMM_INLINE float HMM_Length(const hmm_vec4& A)
 {
     float Result = HMM_LengthVec4(A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthSquared(hmm_vec2 A)
+HMM_INLINE float HMM_LengthSquared(const hmm_vec2& A)
 {
     float Result = HMM_LengthSquaredVec2(A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthSquared(hmm_vec3 A)
+HMM_INLINE float HMM_LengthSquared(const hmm_vec3& A)
 {
     float Result = HMM_LengthSquaredVec3(A);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_LengthSquared(hmm_vec4 A)
+HMM_INLINE float HMM_LengthSquared(const hmm_vec4& A)
 {
     float Result = HMM_LengthSquaredVec4(A);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Normalize(hmm_vec2 A)
+HMM_INLINE hmm_vec2 HMM_Normalize(const hmm_vec2& A)
 {
     hmm_vec2 Result = HMM_NormalizeVec2(A);    
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Normalize(hmm_vec3 A)
+HMM_INLINE hmm_vec3 HMM_Normalize(const hmm_vec3& A)
 {
     hmm_vec3 Result = HMM_NormalizeVec3(A);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Normalize(hmm_vec4 A)
+HMM_INLINE hmm_vec4 HMM_Normalize(const hmm_vec4& A)
 {
     hmm_vec4 Result = HMM_NormalizeVec4(A);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Normalize(hmm_quaternion A)
+HMM_INLINE hmm_quaternion HMM_Normalize(const hmm_quaternion& A)
 {
     hmm_quaternion Result = HMM_NormalizeQuaternion(A);
 
     return (Result);
 }
 
-HMM_INLINE float HMM_Dot(hmm_vec2 VecOne, hmm_vec2 VecTwo)
+HMM_INLINE float HMM_Dot(const hmm_vec2& VecOne, const hmm_vec2& VecTwo)
 {
     float Result = HMM_DotVec2(VecOne, VecTwo);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_Dot(hmm_vec3 VecOne, hmm_vec3 VecTwo)
+HMM_INLINE float HMM_Dot(const hmm_vec3& VecOne, const hmm_vec3& VecTwo)
 {
     float Result = HMM_DotVec3(VecOne, VecTwo);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_Dot(hmm_vec4 VecOne, hmm_vec4 VecTwo)
+HMM_INLINE float HMM_Dot(const hmm_vec4& VecOne, const hmm_vec4& VecTwo)
 {
     float Result = HMM_DotVec4(VecOne, VecTwo);
     
     return (Result);
 }
 
-HMM_INLINE float HMM_Dot(hmm_quaternion QuatOne, hmm_quaternion QuatTwo)
+HMM_INLINE float HMM_Dot(const hmm_quaternion& QuatOne, const hmm_quaternion& QuatTwo)
 {
     float Result = HMM_DotQuaternion(QuatOne, QuatTwo);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Add(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_Add(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_AddVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Add(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_Add(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_AddVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Add(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_Add(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_AddVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Add(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 HMM_Add(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_AddMat4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Add(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_Add(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_AddQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Subtract(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_Subtract(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_SubtractVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Subtract(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_Subtract(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_SubtractVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Subtract(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_Subtract(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_SubtractVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Subtract(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 HMM_Subtract(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_SubtractMat4(Left, Right);
         
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Subtract(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_Subtract(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_SubtractQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Multiply(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_Multiply(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_MultiplyVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Multiply(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 HMM_Multiply(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result = HMM_MultiplyVec2f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Multiply(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_Multiply(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_MultiplyVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Multiply(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 HMM_Multiply(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result = HMM_MultiplyVec3f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Multiply(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_Multiply(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_MultiplyVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Multiply(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 HMM_Multiply(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result = HMM_MultiplyVec4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Multiply(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 HMM_Multiply(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_MultiplyMat4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Multiply(hmm_mat4 Left, float Right)
+HMM_INLINE hmm_mat4 HMM_Multiply(const hmm_mat4& Left, float Right)
 {
     hmm_mat4 Result = HMM_MultiplyMat4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Multiply(hmm_mat4 Matrix, hmm_vec4 Vector)
+HMM_INLINE hmm_vec4 HMM_Multiply(const hmm_mat4& Matrix, const hmm_vec4& Vector)
 {
     hmm_vec4 Result = HMM_MultiplyMat4ByVec4(Matrix, Vector);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Multiply(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion HMM_Multiply(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_MultiplyQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Multiply(hmm_quaternion Left, float Right)
+HMM_INLINE hmm_quaternion HMM_Multiply(const hmm_quaternion& Left, float Right)
 {
     hmm_quaternion Result = HMM_MultiplyQuaternionF(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Divide(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 HMM_Divide(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_DivideVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 HMM_Divide(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 HMM_Divide(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result = HMM_DivideVec2f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Divide(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 HMM_Divide(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_DivideVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 HMM_Divide(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 HMM_Divide(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result = HMM_DivideVec3f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Divide(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 HMM_Divide(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_DivideVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 HMM_Divide(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 HMM_Divide(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result = HMM_DivideVec4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 HMM_Divide(hmm_mat4 Left, float Right)
+HMM_INLINE hmm_mat4 HMM_Divide(const hmm_mat4& Left, float Right)
 {
     hmm_mat4 Result = HMM_DivideMat4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion HMM_Divide(hmm_quaternion Left, float Right)
+HMM_INLINE hmm_quaternion HMM_Divide(const hmm_quaternion& Left, float Right)
 {
     hmm_quaternion Result = HMM_DivideQuaternionF(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_Equals(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_bool HMM_Equals(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_bool Result = HMM_EqualsVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_Equals(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_bool HMM_Equals(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_bool Result = HMM_EqualsVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_bool HMM_Equals(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_bool HMM_Equals(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_bool Result = HMM_EqualsVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator+(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 operator+(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_AddVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator+(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 operator+(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_AddVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator+(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 operator+(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_AddVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator+(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 operator+(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_AddMat4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator+(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion operator+(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_AddQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator-(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 operator-(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_SubtractVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator-(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 operator-(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_SubtractVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator-(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 operator-(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_SubtractVec4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator-(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 operator-(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_SubtractMat4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator-(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion operator-(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_SubtractQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator*(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 operator*(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_MultiplyVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator*(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 operator*(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_MultiplyVec3(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator*(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 operator*(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_MultiplyVec4(Left, Right);
 
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator*(hmm_mat4 Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 operator*(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_MultiplyMat4(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator*(hmm_quaternion Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion operator*(const hmm_quaternion& Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_MultiplyQuaternion(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator*(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 operator*(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result = HMM_MultiplyVec2f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator*(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 operator*(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result = HMM_MultiplyVec3f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator*(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 operator*(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result = HMM_MultiplyVec4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator*(hmm_mat4 Left, float Right)
+HMM_INLINE hmm_mat4 operator*(const hmm_mat4& Left, float Right)
 {
     hmm_mat4 Result = HMM_MultiplyMat4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator*(hmm_quaternion Left, float Right)
+HMM_INLINE hmm_quaternion operator*(const hmm_quaternion& Left, float Right)
 {
     hmm_quaternion Result = HMM_MultiplyQuaternionF(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator*(float Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 operator*(float Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_MultiplyVec2f(Right, Left);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator*(float Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 operator*(float Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_MultiplyVec3f(Right, Left);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator*(float Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 operator*(float Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_MultiplyVec4f(Right, Left);
 
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator*(float Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 operator*(float Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result = HMM_MultiplyMat4f(Right, Left);
 
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator*(float Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion operator*(float Left, const hmm_quaternion& Right)
 {
     hmm_quaternion Result = HMM_MultiplyQuaternionF(Right, Left);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator*(hmm_mat4 Matrix, hmm_vec4 Vector)
+HMM_INLINE hmm_vec4 operator*(const hmm_mat4& Matrix, const hmm_vec4& Vector)
 {
     hmm_vec4 Result = HMM_MultiplyMat4ByVec4(Matrix, Vector);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator/(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 operator/(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     hmm_vec2 Result = HMM_DivideVec2(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator/(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 operator/(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     hmm_vec3 Result = HMM_DivideVec3(Left, Right);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator/(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 operator/(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     hmm_vec4 Result = HMM_DivideVec4(Left, Right);
 
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 operator/(hmm_vec2 Left, float Right)
+HMM_INLINE hmm_vec2 operator/(const hmm_vec2& Left, float Right)
 {
     hmm_vec2 Result = HMM_DivideVec2f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec3 operator/(hmm_vec3 Left, float Right)
+HMM_INLINE hmm_vec3 operator/(const hmm_vec3& Left, float Right)
 {
     hmm_vec3 Result = HMM_DivideVec3f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec4 operator/(hmm_vec4 Left, float Right)
+HMM_INLINE hmm_vec4 operator/(const hmm_vec4& Left, float Right)
 {
     hmm_vec4 Result = HMM_DivideVec4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_mat4 operator/(hmm_mat4 Left, float Right)
+HMM_INLINE hmm_mat4 operator/(const hmm_mat4& Left, float Right)
 {
     hmm_mat4 Result = HMM_DivideMat4f(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_quaternion operator/(hmm_quaternion Left, float Right)
+HMM_INLINE hmm_quaternion operator/(const hmm_quaternion& Left, float Right)
 {
     hmm_quaternion Result = HMM_DivideQuaternionF(Left, Right);
     
     return (Result);
 }
 
-HMM_INLINE hmm_vec2 &operator+=(hmm_vec2 &Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 &operator+=(hmm_vec2 &Left, const hmm_vec2& Right)
 {
     return (Left = Left + Right);
 }
 
-HMM_INLINE hmm_vec3 &operator+=(hmm_vec3 &Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 &operator+=(hmm_vec3 &Left, const hmm_vec3& Right)
 {
     return (Left = Left + Right);
 }
 
-HMM_INLINE hmm_vec4 &operator+=(hmm_vec4 &Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 &operator+=(hmm_vec4 &Left, const hmm_vec4& Right)
 {
     return (Left = Left + Right);
 }
 
-HMM_INLINE hmm_mat4 &operator+=(hmm_mat4 &Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 &operator+=(hmm_mat4 &Left, const hmm_mat4& Right)
 {
     return (Left = Left + Right);
 }
 
-HMM_INLINE hmm_quaternion &operator+=(hmm_quaternion &Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion &operator+=(hmm_quaternion &Left, const hmm_quaternion& Right)
 {
     return (Left = Left + Right);
 }
 
-HMM_INLINE hmm_vec2 &operator-=(hmm_vec2 &Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 &operator-=(hmm_vec2 &Left, const hmm_vec2& Right)
 {
     return (Left = Left - Right);
 }
 
-HMM_INLINE hmm_vec3 &operator-=(hmm_vec3 &Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 &operator-=(hmm_vec3 &Left, const hmm_vec3& Right)
 {
     return (Left = Left - Right);
 }
 
-HMM_INLINE hmm_vec4 &operator-=(hmm_vec4 &Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 &operator-=(hmm_vec4 &Left, const hmm_vec4& Right)
 {
     return (Left = Left - Right);
 }
 
-HMM_INLINE hmm_mat4 &operator-=(hmm_mat4 &Left, hmm_mat4 Right)
+HMM_INLINE hmm_mat4 &operator-=(hmm_mat4 &Left, const hmm_mat4& Right)
 {
     return (Left = Left - Right);
 }
 
-HMM_INLINE hmm_quaternion &operator-=(hmm_quaternion &Left, hmm_quaternion Right)
+HMM_INLINE hmm_quaternion &operator-=(hmm_quaternion &Left, const hmm_quaternion& Right)
 {
     return (Left = Left - Right);
 }
 
-HMM_INLINE hmm_vec2 &operator*=(hmm_vec2 &Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 &operator*=(hmm_vec2 &Left, const hmm_vec2& Right)
 {
     return (Left = Left * Right);
 }
 
-HMM_INLINE hmm_vec3 &operator*=(hmm_vec3 &Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 &operator*=(hmm_vec3 &Left, const hmm_vec3& Right)
 {
     return (Left = Left * Right);
 }
 
-HMM_INLINE hmm_vec4 &operator*=(hmm_vec4 &Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 &operator*=(hmm_vec4 &Left, const hmm_vec4& Right)
 {
     return (Left = Left * Right);
 }
@@ -2048,17 +2048,17 @@ HMM_INLINE hmm_quaternion &operator*=(hmm_quaternion &Left, float Right)
     return (Left = Left * Right);
 }
 
-HMM_INLINE hmm_vec2 &operator/=(hmm_vec2 &Left, hmm_vec2 Right)
+HMM_INLINE hmm_vec2 &operator/=(hmm_vec2 &Left, const hmm_vec2& Right)
 {
     return (Left = Left / Right);
 }
 
-HMM_INLINE hmm_vec3 &operator/=(hmm_vec3 &Left, hmm_vec3 Right)
+HMM_INLINE hmm_vec3 &operator/=(hmm_vec3 &Left, const hmm_vec3& Right)
 {
     return (Left = Left / Right);
 }
 
-HMM_INLINE hmm_vec4 &operator/=(hmm_vec4 &Left, hmm_vec4 Right)
+HMM_INLINE hmm_vec4 &operator/=(hmm_vec4 &Left, const hmm_vec4& Right)
 {
     return (Left = Left / Right);
 }
@@ -2088,32 +2088,32 @@ HMM_INLINE hmm_quaternion &operator/=(hmm_quaternion &Left, float Right)
     return (Left = Left / Right);
 }
 
-HMM_INLINE hmm_bool operator==(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_bool operator==(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     return HMM_EqualsVec2(Left, Right);
 }
 
-HMM_INLINE hmm_bool operator==(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_bool operator==(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     return HMM_EqualsVec3(Left, Right);
 }
 
-HMM_INLINE hmm_bool operator==(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_bool operator==(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     return HMM_EqualsVec4(Left, Right);
 }
 
-HMM_INLINE hmm_bool operator!=(hmm_vec2 Left, hmm_vec2 Right)
+HMM_INLINE hmm_bool operator!=(const hmm_vec2& Left, const hmm_vec2& Right)
 {
     return !HMM_EqualsVec2(Left, Right);
 }
 
-HMM_INLINE hmm_bool operator!=(hmm_vec3 Left, hmm_vec3 Right)
+HMM_INLINE hmm_bool operator!=(const hmm_vec3& Left, const hmm_vec3& Right)
 {
     return !HMM_EqualsVec3(Left, Right);
 }
 
-HMM_INLINE hmm_bool operator!=(hmm_vec4 Left, hmm_vec4 Right)
+HMM_INLINE hmm_bool operator!=(const hmm_vec4& Left, const hmm_vec4& Right)
 {
     return !HMM_EqualsVec4(Left, Right);
 }
@@ -2148,7 +2148,7 @@ float HMM_Power(float Base, int Exponent)
 }
 
 #ifndef HANDMADE_MATH__USE_SSE
-hmm_mat4 HMM_Transpose(hmm_mat4 Matrix)
+hmm_mat4 HMM_Transpose(const hmm_mat4& Matrix)
 {
     hmm_mat4 Result;
 
@@ -2167,7 +2167,7 @@ hmm_mat4 HMM_Transpose(hmm_mat4 Matrix)
 #endif
 
 #ifndef HANDMADE_MATH__USE_SSE
-hmm_mat4 HMM_AddMat4(hmm_mat4 Left, hmm_mat4 Right)
+hmm_mat4 HMM_AddMat4(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result;
 
@@ -2186,7 +2186,7 @@ hmm_mat4 HMM_AddMat4(hmm_mat4 Left, hmm_mat4 Right)
 #endif
 
 #ifndef HANDMADE_MATH__USE_SSE
-hmm_mat4 HMM_SubtractMat4(hmm_mat4 Left, hmm_mat4 Right)
+hmm_mat4 HMM_SubtractMat4(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result;
 
@@ -2204,7 +2204,7 @@ hmm_mat4 HMM_SubtractMat4(hmm_mat4 Left, hmm_mat4 Right)
 }
 #endif
 
-hmm_mat4 HMM_MultiplyMat4(hmm_mat4 Left, hmm_mat4 Right)
+hmm_mat4 HMM_MultiplyMat4(const hmm_mat4& Left, const hmm_mat4& Right)
 {
     hmm_mat4 Result;
 
@@ -2238,7 +2238,7 @@ hmm_mat4 HMM_MultiplyMat4(hmm_mat4 Left, hmm_mat4 Right)
 }
 
 #ifndef HANDMADE_MATH__USE_SSE
-hmm_mat4 HMM_MultiplyMat4f(hmm_mat4 Matrix, float Scalar)
+hmm_mat4 HMM_MultiplyMat4f(const hmm_mat4& Matrix, float Scalar)
 {
     hmm_mat4 Result;
 
@@ -2256,7 +2256,7 @@ hmm_mat4 HMM_MultiplyMat4f(hmm_mat4 Matrix, float Scalar)
 }
 #endif
 
-hmm_vec4 HMM_MultiplyMat4ByVec4(hmm_mat4 Matrix, hmm_vec4 Vector)
+hmm_vec4 HMM_MultiplyMat4ByVec4(const hmm_mat4& Matrix, const hmm_vec4& Vector)
 {
     hmm_vec4 Result;
    
@@ -2280,7 +2280,7 @@ hmm_vec4 HMM_MultiplyMat4ByVec4(hmm_mat4 Matrix, hmm_vec4 Vector)
 }
 
 #ifndef HANDMADE_MATH__USE_SSE
-hmm_mat4 HMM_DivideMat4f(hmm_mat4 Matrix, float Scalar)
+hmm_mat4 HMM_DivideMat4f(const hmm_mat4& Matrix, float Scalar)
 {
     hmm_mat4 Result;
     
@@ -2351,7 +2351,7 @@ hmm_mat4 HMM_LookAt(hmm_vec3 Eye, hmm_vec3 Center, hmm_vec3 Up)
     return (Result);
 }
 
-hmm_quaternion HMM_InverseQuaternion(hmm_quaternion Left)
+hmm_quaternion HMM_InverseQuaternion(const hmm_quaternion& Left)
 {
     hmm_quaternion Conjugate;
     hmm_quaternion Result;
@@ -2374,7 +2374,7 @@ hmm_quaternion HMM_InverseQuaternion(hmm_quaternion Left)
     return (Result);
 }
 
-hmm_quaternion HMM_Slerp(hmm_quaternion Left, float Time, hmm_quaternion Right)
+hmm_quaternion HMM_Slerp(const hmm_quaternion& Left, float Time, const hmm_quaternion& Right)
 {
     hmm_quaternion Result;
     hmm_quaternion QuaternionLeft;
@@ -2396,7 +2396,7 @@ hmm_quaternion HMM_Slerp(hmm_quaternion Left, float Time, hmm_quaternion Right)
     return (Result);
 }
 
-hmm_mat4 HMM_QuaternionToMat4(hmm_quaternion Left)
+hmm_mat4 HMM_QuaternionToMat4(const hmm_quaternion& Left)
 {
     hmm_mat4 Result;
     Result = HMM_Mat4d(1);
@@ -2432,7 +2432,7 @@ hmm_mat4 HMM_QuaternionToMat4(hmm_quaternion Left)
     return (Result);
 }
 
-hmm_quaternion HMM_QuaternionFromAxisAngle(hmm_vec3 Axis, float AngleOfRotation)
+hmm_quaternion HMM_QuaternionFromAxisAngle(const hmm_vec3& Axis, float AngleOfRotation)
 {
     hmm_quaternion Result;
     
